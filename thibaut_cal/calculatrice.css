@@ -1,0 +1,124 @@
+* {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+#wrapper {
+    align-content: center;
+    align-items: center;
+    background-image: url(background.gif);
+    height: 469px;
+    margin: 80px;
+    padding: 80px;
+    width: 596px;
+    background-size:cover;
+    
+}
+
+#calculatrice{
+
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+	width: 250;
+	height: 200px;
+    padding: 5px;
+    border: 5px solid red;
+    align-content: : center;
+    align-items: center;
+}
+
+
+.bouton-chiffre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    height: 50px;
+    width: 50px;
+    
+    
+    
+    
+}
+
+.bouton-chiffre:active{
+    transform: translateY(10px);
+    box-shadow: -5px -10px 0px yellow;
+}
+
+.bouton-chiffre:hover {
+    border: 5px solid red;  
+
+}
+
+#operations { 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+	width: 240px;
+	height: 150px;
+    padding: 5px;
+    border: 5px solid yellow;
+    align-content: : center;
+    align-items: center;
+    position: absolute;
+    right: 400px;
+    top: 205px;
+    
+}
+.bouton-fonction {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    
+    
+}
+
+.bouton-fonction:hover{
+    border: 5px solid yellow; 
+}
+
+.bouton-fonction:active {
+    
+    transform: translateY(10px);
+    box-shadow: -5px -10px 0px red;
+}
+
+#bouton-egal {
+    
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    background-image: url('Balrog-gigaton.gif');
+    background-size: contain;
+    background-repeat: no-repeat ;
+    
+}
+#bouton-egal:active {
+    background-color: black;
+    background-image: url('egal-active.gif');
+    background-size: contain;
+    background-position: right;
+}
+#resultat{
+    
+    background-color: black;
+    border: 5px solid black;
+    margin-top: 200px;
+    margin-left: 310px;
+    width: 330px;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color: red;
+    box-shadow: -5px -5px 20px yellow;
+    border-radius: 45% 20%;
+       
+}
+
